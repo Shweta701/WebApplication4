@@ -1,0 +1,28 @@
+﻿@model IEnumerable<WebApplication4.Model.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Salary</th>
+        <th>Gender</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var emp in Model)
+            {
+                <tr>
+                    <td>@emp.Id</td>
+                    <td>@emp.Name</td>
+                    <td>@emp.Email</td>
+                    <td>@emp.Salary</td>
+                    <td>@emp.Gender</td>
+                    <td></td>
+                </tr>
+            }
+</table>
+
